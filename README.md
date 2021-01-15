@@ -25,6 +25,8 @@ _Keep in mind that in order to properly build out the relationships between the 
 # - `Origin#country` should return the country for the origin instance.
 # - `Origin#continent` should return the name of continent for the origin instance.
 # - `Origin.all` should return an array of all the origin instances.
+
+
 - `Origin#animals` should return all the animals that a specific instance of an origin has.
 - `Origin#zoos` should return all the zoos that hold animals of this specific origin.
 - `Origin#animal_number` should return an integer that indicates the number of different animal instances an origin has in total.
