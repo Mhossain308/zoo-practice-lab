@@ -44,9 +44,9 @@ _Keep in mind that in order to properly build out the relationships between the 
 # - `Zoo#name` should return the name of the zoo instance. 
 # - `Zoo#address` should return the address of the zoo instance.
 # - `Zoo.all` should return an array of all the zoo instances.
-- `Zoo#all_animals` should return all the animals that a specific instance of a zoo has.
-- `Zoo#all_animal_species` should return an array of the unique animal species that a specific instance of a zoo has.
-- `Zoo.find_by_name` should take in an argument of a string of a name and return an instance of the zoo.
+# - `Zoo#all_animals` should return all the animals that a specific instance of a zoo has.
+# - `Zoo#all_animal_species` should return an array of the unique animal species that a specific instance of a zoo has.
+# - `Zoo.find_by_name` should take in an argument of a string of a name and return an instance of the zoo.
 `Zoo#origins` should return all the unique animal origins that a specific instance of a zoo has.
 ​
 There are no `rspec` files, so it's up to you to test your code within the `console.rb` file.
