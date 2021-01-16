@@ -17,29 +17,38 @@ class Origin
     end
 
     def animals
-        # binding.pry
         Animal.all.select {|animal| animal.origin  == self}
     end
 
     def zoos
-        # binding.pry
-        self.animals.map{|animal| animal.zoo}
+        animals.map(:zoo).uniq
     end
 
 
 
     def animal_number
-        # binding.pry
-        self.animals.count
+        animals.length
+    end
+
+    def self.continent(name)
+            array = all.select{|origin| origin.continent == name}
     end
 
     def self.find_by_continent(name)
-        # binding.pry
-        self.all.find{|origin| origin.continent == name}
+        continent(name).map(&:country)
     end
 
     def self.most_animals
-        binding.pry
+        most_origin = all[0]
+        all.each do |origin|
+            if origin.animal_number > most_origin.animal_number
+                most_origin = origin
+            end
+        end
+        most_origin
     end
+    
 
 end
+
+
