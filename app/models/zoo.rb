@@ -26,7 +26,7 @@ class Zoo
     end
 
     def self.find_by_name(name)
-        binding.pry
+        
         self.all.find {|zoo| zoo.name == name}
     end
 

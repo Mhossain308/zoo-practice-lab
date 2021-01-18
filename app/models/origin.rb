@@ -1,8 +1,8 @@
-require 'pry'
+
 
 class Origin
 
-    attr_reader :continent,:name, :country
+    attr_reader :continent, :country
 
     @@all = []
 
@@ -31,7 +31,7 @@ class Origin
     end
 
     def self.continent(name)
-            array = all.select{|origin| origin.continent == name}
+        all.select{|origin| origin.continent == name}
     end
 
     def self.find_by_continent(name)
