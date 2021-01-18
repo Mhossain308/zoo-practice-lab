@@ -21,12 +21,13 @@ class Origin
     end
 
     def zoos
-        animals.map(:zoo).uniq
+        animals.map(&:zoo).uniq
     end
 
 
 
     def animal_number
+        # binding.pry
         animals.length
     end
 
