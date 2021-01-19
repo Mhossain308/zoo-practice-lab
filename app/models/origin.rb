@@ -27,7 +27,7 @@ class Origin
 
 
     def animal_number
-        # binding.pry
+        
         animals.length
     end
 
