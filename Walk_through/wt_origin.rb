@@ -1,3 +1,6 @@
+# identify relationship types
+# zoo ---< animal  zoo>-----<origin origin---<animal
+
 # define Origin class
 
     #set attr methods continent,country 
