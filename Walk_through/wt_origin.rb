@@ -8,7 +8,7 @@
 
     #define initialize method with parameters continent and country
 
-        #dclare continent and country and push self into all
+        #degclare continent and country and push self into all
 
 
     #define self.all which reads @@all 

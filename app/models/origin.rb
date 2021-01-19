@@ -37,6 +37,7 @@ class Origin
 
     def self.find_by_continent(name)
         continent(name).map(&:country)
+        #continent(name).map{|origin| origin.country}
     end
 
     def self.most_animals
